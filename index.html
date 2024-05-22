@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .photo {
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo:hover {
+            transform: translateY(-5px);
+        }
+        .photo img {
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            transition: filter 0.3s ease;
+        }
+        .photo:hover img {
+            filter: brightness(0.8);
+        }
+        .photo-info {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .photo-info h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .photo-info p {
+            font-size: 1.1em;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography Gallery</h1>
+    </header>
+    <div class="container">
+        <div class="photo">
+            <img src="hike.jpg" alt="Photo 1">
+            <div class="photo-info">
+                <h2>Beautiful Landscape</h2>
+                <p>A stunning landscape captured during a hike in the mountains.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="sset.jpg" alt="Photo 2">
+            <div class="photo-info">
+                <h2>Sunset by the Beach</h2>
+                <p>A mesmerizing sunset view captured at the beach.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="ue.jpg" alt="Photo 3">
+            <div class="photo-info">
+                <h2>Urban Exploration</h2>
+                <p>Exploring the hidden gems of the city streets.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="mrion.jpg" alt="Photo 4">
+            <div class="photo-info">
+                <h2>Mountain Reflection</h2>
+                <p>Reflection of snow-capped mountains in a crystal clear lake.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="ef.jpg" alt="Photo 5">
+            <div class="photo-info">
+                <h2>Enchanting Forest</h2>
+                <p>A peaceful walk through the enchanted forest in autumn.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="cl.jpg" alt="Photo 6">
+            <div class="photo-info">
+                <h2>City Lights</h2>
+                <p>The vibrant night lights of the bustling city skyline.</p>
+            </div>
+    </div>
+</body>
+</html>
